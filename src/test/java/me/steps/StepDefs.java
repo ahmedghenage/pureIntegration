@@ -37,6 +37,7 @@ public class StepDefs extends BasePage {
         String actualTitle = Driver.getDriver().getTitle();
         assertEquals(actualTitle,expectedTitle);
         log.info(actualTitle + expectedTitle);
+        log.info(expectedTitle);
 
     }
 
