@@ -36,8 +36,6 @@ public class StepDefs extends BasePage {
     public void userShouldSeeTitleIs(String expectedTitle) {
         String actualTitle = Driver.getDriver().getTitle();
         assertEquals(actualTitle,expectedTitle);
-        log.info(actualTitle + expectedTitle);
-        log.info(expectedTitle);
 
     }
 
@@ -53,6 +51,6 @@ public class StepDefs extends BasePage {
     @Then("user should see open positions Careers at pureIntegration")
     public void userShouldSeeOpenPositionsCareersAtPureIntegration(){
         assertTrue(careersPage.openPositionsBanner.isDisplayed());
-        log.info(careersPage.openPositionsBanner);
+        log.info(careersPage.openPositionsBanner.getText());
     }
 }
